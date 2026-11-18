@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Airline Check-In Management Simulator - Home</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #eef2f7;
+            margin: 0;
+            padding: 15px;
+            color: #111827;
+        }
+        .header-table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #0b1f3a;
+            color: #ffffff;
+        }
+        .header-title {
+            font-size: 26px;
+            font-weight: bold;
+            margin: 0;
+        }
+        .header-sub {
+            font-size: 13px;
+            color: #38bdf8;
+            font-weight: bold;
+            margin-top: 4px;
+        }
+        .nav-table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #ffffff;
+            margin-top: 12px;
+        }
+        .nav-table td {
+            border: 1px solid #0b1f3a;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .nav-table td.active-tab {
+            background-color: #0b1f3a;
+        }
+        .nav-table td.active-tab a {
+            color: #ffffff;
+        }
+        .nav-table td a {
+            color: #111827;
+        }
+        .content-box {
+            background-color: #f4f7fb;
+            border: 1px solid #cbd5e1;
+            margin-top: 15px;
+            padding: 20px;
+        }
+        h2 {
+            font-size: 20px;
+            color: #111827;
+            margin-top: 0;
+            margin-bottom: 8px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #111827;
+            margin-top: 22px;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 13.5px;
+            color: #1f2937;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+        .form-table {
+            border-collapse: collapse;
+            background-color: #ffffff;
+        }
+        .form-table td {
+            border: 1px solid #cbd5e1;
+            padding: 8px 12px;
+            font-size: 13.5px;
+        }
+        .btn-submit {
+            background-color: #0b1f3a;
+            color: #ffffff;
+            border: none;
+            padding: 7px 14px;
+            font-size: 12.5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #ffffff;
+        }
+        .data-table th {
+            background-color: #0b1f3a;
+            color: #ffffff;
+            text-align: left;
+            padding: 10px 12px;
+            font-size: 13.5px;
+            border: 1px solid #0b1f3a;
+        }
+        .data-table td {
+            border: 1px solid #111827;
+            padding: 10px 12px;
+            font-size: 13.5px;
+            vertical-align: top;
+        }
+        .status-open {
+            color: #15803d;
+            font-weight: bold;
+        }
+        .bottom-links {
+            width: 100%;
+            margin-top: 22px;
+            font-size: 13.5px;
+            font-weight: bold;
+        }
+        .bottom-links a {
+            color: #4c1d95;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Dark Navy Header & 5-Tab Navigation -->
+    <table class="header-table" cellpadding="15">
+        <tr>
+            <td>
+                <div class="header-title">Airline Check-In Management Simulator</div>
+                <div class="header-sub">Home & Terminal Check-In Portal</div>
+
+                <table class="nav-table">
+                    <tr>
+                        <td class="active-tab" width="12%"><a href="home.html">1. Home</a></td>
+                        <td width="24%"><a href="verify.html">2. Passenger Verification</a></td>
+                        <td width="22%"><a href="seats.html">3. Seat Allocation Map</a></td>
+                        <td width="22%"><a href="baggage.html">4. Baggage Information</a></td>
+                        <td width="20%"><a href="boarding-pass.html">5. Boarding Pass</a></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Main Content Container -->
+    <div class="content-box">
+        <h2>SkyLine Airways Self-Service Check-In Portal</h2>
+        <p>Enter your booking PNR reference and passenger last name below to start online check-in, select your cabin seat, register baggage weights, and issue your boarding pass.</p>
+
+        <!-- Quick Check-In Form Table (Matches verify.html form box) -->
+        <form action="verify.html" method="GET">
+            <table class="form-table">
+                <tr>
+                    <td><strong>PNR Code:</strong></td>
+                    <td><input type="text" name="pnr" value="SKY892" size="16" required></td>
+                    <td><strong>Last Name:</strong></td>
+                    <td><input type="text" name="lastname" value="SHARMA" size="18" required></td>
+                    <td><button type="submit" class="btn-submit">Start Check-In</button></td>
+                </tr>
+            </table>
+        </form>
+
+        <!-- Active Terminal Departures & Check-In Schedule -->
+        <h3>Active Terminal Departures & Check-In Windows</h3>
+        <table class="data-table">
+            <tr>
+                <th colspan="5">SKYLINE AIRWAYS — TERMINAL 2 LIVE CHECK-IN COUNTER STATUS</th>
+            </tr>
+            <tr>
+                <td><strong>Flight Number</strong></td>
+                <td><strong>Route</strong></td>
+                <td><strong>Departure Time</strong></td>
+                <td><strong>Boarding Gate</strong></td>
+                <td><strong>Check-In Status</strong></td>
+            </tr>
+            <tr>
+                <td>SL-402 (Non-Stop)</td>
+                <td>New Delhi (DEL) to Mumbai (BOM)</td>
+                <td>15 Nov 2026 | 10:30 AM</td>
+                <td>Gate G-14 (Terminal 2)</td>
+                <td><span class="status-open">ON TIME - CHECK-IN OPEN</span></td>
+            </tr>
+            <tr>
+                <td>SL-618 (Non-Stop)</td>
+                <td>New Delhi (DEL) to Bengaluru (BLR)</td>
+                <td>15 Nov 2026 | 12:15 PM</td>
+                <td>Gate B-08 (Terminal 2)</td>
+                <td><span class="status-open">ON TIME - CHECK-IN OPEN</span></td>
+            </tr>
+        </table>
+
+        <!-- Passenger Check-In Guidelines Table -->
+        <h3>Terminal Check-In & Baggage Rules</h3>
+        <table class="data-table">
+            <tr>
+                <td width="25%"><strong>Web Check-In Window</strong></td>
+                <td>Opens 48 hours prior to scheduled departure and closes 60 minutes before takeoff.</td>
+            </tr>
+            <tr>
+                <td><strong>Identity Verification</strong></td>
+                <td>Passengers must present a valid Passport, Aadhaar Card, or government-issued photo ID.</td>
+            </tr>
+            <tr>
+                <td><strong>Baggage Allowance</strong></td>
+                <td>Cabin Hand Bag: Max 7.0 KG | Check-In Suitcase: Max 15.0 KG per passenger.</td>
+            </tr>
+        </table>
+
+        <!-- Bottom Navigation Link -->
+        <table class="bottom-links">
+            <tr>
+                <td align="left">SkyLine Airways Ground Operations & Terminal Services</td>
+                <td align="right"><a href="verify.html">Proceed to Step 2: Passenger Verification >></a></td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>

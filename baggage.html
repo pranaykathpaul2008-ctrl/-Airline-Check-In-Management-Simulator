@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Baggage Information</title>
+</head>
+<body bgcolor="#e2e8f0" text="#0f172a" style="font-family: Arial, sans-serif; margin: 0; padding: 25px;">
+
+    <table width="100%" border="0" cellpadding="20" cellspacing="0" bgcolor="#091f36">
+        <tr>
+            <td align="left">
+                <font color="#ffffff" size="6"><b>Airline Check-In Management Simulator</b></font><br>
+                <font color="#38bdf8" size="3"><b>Step 3: Baggage Information & Status Tracker</b></font>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Universal Navigation Bar -->
+    <table width="100%" border="1" bordercolor="#091f36" cellpadding="12" cellspacing="0" bgcolor="#ffffff">
+        <tr align="center">
+            <td bgcolor="#f1f5f9"><a href="home.html"><font color="#0f172a"><b>1. Home</b></font></a></td>
+            <td bgcolor="#f1f5f9"><a href="verify.html"><font color="#0f172a"><b>2. Passenger Verification</b></font></a></td>
+            <td bgcolor="#f1f5f9"><a href="seats.html"><font color="#0f172a"><b>3. Seat Allocation Map</b></font></a></td>
+            <td bgcolor="#091f36"><a href="baggage.html"><font color="#ffffff"><b>4. Baggage Information</b></font></a></td>
+            <td bgcolor="#f1f5f9"><a href="boarding-pass.html"><font color="#0f172a"><b>5. Boarding Pass</b></font></a></td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table width="100%" border="1" bordercolor="#cbd5e1" cellpadding="25" cellspacing="0" bgcolor="#ffffff">
+        <tr>
+            <td>
+                <h2>Baggage Declaration & Compliance</h2>
+                <p>Cabin and checked luggage weights are inspected and logged against flight safety weight limits.</p>
+
+                <!-- Baggage Input Form -->
+                <table border="1" bordercolor="#cbd5e1" cellpadding="10" cellspacing="0" bgcolor="#f8fafc">
+                    <form action="baggage.html">
+                        <tr>
+                            <td><b>Cabin Bag Weight (KG):</b></td>
+                            <td><input type="text" value="6.0" size="6"></td>
+                            <td><b>Check-In Bag Weight (KG):</b></td>
+                            <td><input type="text" value="14.2" size="6"></td>
+                            <td><input type="submit" value="Register Weights" style="background-color: #091f36; color: white; padding: 5px 10px; font-weight: bold; border: none; cursor: pointer;"></td>
+                        </tr>
+                    </form>
+                </table>
+
+                <br>
+                <table width="100%" border="1" bordercolor="#091f36" cellpadding="12" cellspacing="0">
+                    <tr bgcolor="#091f36">
+                        <th><font color="#ffffff">Baggage Category</font></th>
+                        <th><font color="#ffffff">Item Description</font></th>
+                        <th><font color="#ffffff">Max Limit</font></th>
+                        <th><font color="#ffffff">Measured Weight</font></th>
+                        <th><font color="#ffffff">Luggage Tag ID</font></th>
+                        <th><font color="#ffffff">Status</font></th>
+                    </tr>
+                    <tr align="center">
+                        <td><b>Cabin Hand Bag</b></td>
+                        <td>Laptop Backpack</td>
+                        <td>7.0 KG</td>
+                        <td>6.0 KG</td>
+                        <td>CAB-892-01</td>
+                        <td><font color="#15803d"><b>APPROVED</b></font></td>
+                    </tr>
+                    <tr align="center">
+                        <td><b>Check-In Suitcase</b></td>
+                        <td>Main Luggage Bag</td>
+                        <td>15.0 KG</td>
+                        <td>14.2 KG</td>
+                        <td>SL-DEL-99412</td>
+                        <td><font color="#15803d"><b>TAGGED & ACCEPTED</b></font></td>
+                    </tr>
+                </table>
+
+                <br>
+                <h3>Check-In Workflow Status</h3>
+                <table width="100%" border="1" bordercolor="#cbd5e1" cellpadding="12" cellspacing="0">
+                    <tr align="center">
+                        <td width="25%" bgcolor="#dcfce7"><b>1. Verification</b><br>Passed</td>
+                        <td width="25%" bgcolor="#dcfce7"><b>2. Flight Check</b><br>Confirmed</td>
+                        <td width="25%" bgcolor="#dcfce7"><b>3. Seat Map</b><br>Seat 12A</td>
+                        <td width="25%" bgcolor="#fef08a"><b>4. Baggage</b><br>14.2 KG Logged</td>
+                    </tr>
+                </table>
+
+                <br>
+                <table width="100%" border="0">
+                    <tr>
+                        <td align="left"><a href="seats.html"><b><< Back to Seat Allocation Map</b></a></td>
+                        <td align="right"><a href="boarding-pass.html"><b>Proceed to Step 5: Boarding Pass >></b></a></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+    <center>
+        <font size="2" color="#475569">SkyLine Airways Baggage Handling System | Terminal Logistics</font>
+    </center>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Passenger Verification</title>
+</head>
+<body bgcolor="#e2e8f0" text="#0f172a" style="font-family: Arial, sans-serif; margin: 0; padding: 25px;">
+
+    <table width="100%" border="0" cellpadding="20" cellspacing="0" bgcolor="#091f36">
+        <tr>
+            <td align="left">
+                <font color="#ffffff" size="6"><b>Airline Check-In Management Simulator</b></font><br>
+                <font color="#38bdf8" size="3"><b>Step 1: Passenger Search & Flight Verification</b></font>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Universal Navigation Bar -->
+    <table width="100%" border="1" bordercolor="#091f36" cellpadding="12" cellspacing="0" bgcolor="#ffffff">
+        <tr align="center">
+            <td bgcolor="#f1f5f9"><a href="home.html"><font color="#0f172a"><b>1. Home</b></font></a></td>
+            <td bgcolor="#091f36"><a href="verify.html"><font color="#ffffff"><b>2. Passenger Verification</b></font></a></td>
+            <td bgcolor="#f1f5f9"><a href="seats.html"><font color="#0f172a"><b>3. Seat Allocation Map</b></font></a></td>
+            <td bgcolor="#f1f5f9"><a href="baggage.html"><font color="#0f172a"><b>4. Baggage Information</b></font></a></td>
+            <td bgcolor="#f1f5f9"><a href="boarding-pass.html"><font color="#0f172a"><b>5. Boarding Pass</b></font></a></td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table width="100%" border="1" bordercolor="#cbd5e1" cellpadding="25" cellspacing="0" bgcolor="#ffffff">
+        <tr>
+            <td>
+                <h2>Passenger Lookup Form</h2>
+                <p>Provide booking PNR and passenger last name to query the airline reservation database.</p>
+
+                <!-- Interactive Form Inputs -->
+                <table border="1" bordercolor="#cbd5e1" cellpadding="10" cellspacing="0" bgcolor="#f8fafc">
+                    <form action="verify.html">
+                        <tr>
+                            <td><b>PNR Code:</b></td>
+                            <td><input type="text" value="SKY892" size="18"></td>
+                            <td><b>Last Name:</b></td>
+                            <td><input type="text" value="SHARMA" size="18"></td>
+                            <td><input type="submit" value="Search Database" style="background-color: #091f36; color: white; padding: 6px 12px; font-weight: bold; border: none; cursor: pointer;"></td>
+                        </tr>
+                    </form>
+                </table>
+
+                <br>
+                <h3>Flight & Passenger Verification Record</h3>
+                <table width="100%" border="1" bordercolor="#091f36" cellpadding="12" cellspacing="0">
+                    <tr bgcolor="#091f36">
+                        <th colspan="3" align="left"><font color="#ffffff">VERIFIED RESERVATION RECORD</font></th>
+                    </tr>
+                    <tr>
+                        <td width="25%" rowspan="5" align="center" bgcolor="#f8fafc">
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150" alt="Passenger" width="110" border="1"><br><br>
+                            <font color="#15803d"><b>✔ ID VERIFIED</b></font>
+                        </td>
+                        <td width="35%"><b>Passenger Name:</b><br>Aarav Sharma</td>
+                        <td width="40%"><b>Flight Number:</b><br>SL-402 (Non-Stop)</td>
+                    </tr>
+                    <tr>
+                        <td><b>PNR Reference:</b><br>SKY892</td>
+                        <td><b>Route:</b><br>New Delhi (DEL) to Mumbai (BOM)</td>
+                    </tr>
+                    <tr>
+                        <td><b>Identity Document:</b><br>Passport / Aadhaar (XXXX-4519)</td>
+                        <td><b>Scheduled Departure:</b><br>15 Nov 2026 | 10:30 AM</td>
+                    </tr>
+                    <tr>
+                        <td><b>Travel Class:</b><br>Economy (Standard)</td>
+                        <td><b>Assigned Boarding Gate:</b><br>Gate G-14 (Terminal 2)</td>
+                    </tr>
+                    <tr>
+                        <td><b>Payment Status:</b><br>Confirmed & Paid</td>
+                        <td><b>Flight Status:</b><br><font color="#15803d"><b>ON TIME - CHECK-IN OPEN</b></font></td>
+                    </tr>
+                </table>
+
+                <br>
+                <table width="100%" border="0">
+                    <tr>
+                        <td align="left"><a href="home.html"><b><< Back to Home</b></a></td>
+                        <td align="right"><a href="seats.html"><b>Proceed to Step 3: Seat Allocation Map >></b></a></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+    <center>
+        <font size="2" color="#475569">SkyLine Airways Passenger Service System | Departure Control Unit</font>
+    </center>
+
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Seat Allocation Map</title>
+</head>
+<body bgcolor="#e2e8f0" text="#0f172a" style="font-family: Arial, sans-serif; margin: 0; padding: 25px;">
+
+    <table width="100%" border="0" cellpadding="20" cellspacing="0" bgcolor="#091f36">
+        <tr>
+            <td align="left">
+                <font color="#ffffff" size="6"><b>Airline Check-In Management Simulator</b></font><br>
+                <font color="#38bdf8" size="3"><b>Step 2: Cabin Seat Allocation Map</b></font>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Universal Navigation Bar -->
+    <table width="100%" border="1" bordercolor="#091f36" cellpadding="12" cellspacing="0" bgcolor="#ffffff">
+        <tr align="center">
+            <td bgcolor="#f1f5f9"><a href="home.html"><font color="#0f172a"><b>1. Home</b></font></a></td>
+            <td bgcolor="#f1f5f9"><a href="verify.html"><font color="#0f172a"><b>2. Passenger Verification</b></font></a></td>
+            <td bgcolor="#091f36"><a href="seats.html"><font color="#ffffff"><b>3. Seat Allocation Map</b></font></a></td>
+            <td bgcolor="#f1f5f9"><a href="baggage.html"><font color="#0f172a"><b>4. Baggage Information</b></font></a></td>
+            <td bgcolor="#f1f5f9"><a href="boarding-pass.html"><font color="#0f172a"><b>5. Boarding Pass</b></font></a></td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table width="100%" border="1" bordercolor="#cbd5e1" cellpadding="25" cellspacing="0" bgcolor="#ffffff">
+        <tr>
+            <td>
+                <h2>Interactive Aircraft Seat Allocation</h2>
+                <p>Select your seat assignment inside the aircraft cabin layout grid or use the seat update form below for Flight SL-402 (Airbus A320).</p>
+
+                <table width="100%" border="0" cellpadding="5">
+                    <tr>
+                        <td width="38%" valign="top">
+                            <h3>Cabin Legend</h3>
+                            <table width="100%" border="1" bordercolor="#cbd5e1" cellpadding="8" cellspacing="0">
+                                <tr>
+                                    <td bgcolor="#dcfce7" width="25%" align="center"><b>10C</b></td>
+                                    <td><b>Available:</b> Open seat</td>
+                                </tr>
+                                <tr>
+                                    <td bgcolor="#fee2e2" align="center"><b>10A</b></td>
+                                    <td><b>Occupied:</b> Reserved seat</td>
+                                </tr>
+                                <tr>
+                                    <td bgcolor="#fef08a" align="center"><b>12A</b></td>
+                                    <td><b>Selected:</b> Aarav Sharma</td>
+                                </tr>
+                            </table>
+
+                            <br>
+                            <h3>Seat Change Form</h3>
+                            <!-- Interactive Seat Selection Form -->
+                            <table width="100%" border="1" bordercolor="#cbd5e1" cellpadding="10" cellspacing="0" bgcolor="#f8fafc">
+                                <form action="seats.html">
+                                    <tr>
+                                        <td>
+                                            <b>Preferred Seat:</b><br>
+                                            <input type="text" value="12A" size="8"> 
+                                            <input type="submit" value="Update" style="background-color: #091f36; color: white; border: none; padding: 4px 8px; cursor: pointer;">
+                                        </td>
+                                    </tr>
+                                </form>
+                            </table>
+                        </td>
+
+                        <td width="62%" align="center" valign="top">
+                            <h3>Aircraft Cabin Layout Grid</h3>
+                            <font size="2" color="#64748b">Front of Aircraft ↑</font><br><br>
+
+                            <table border="1" bordercolor="#091f36" cellpadding="12" cellspacing="3" bgcolor="#f8fafc">
+                                <tr align="center" bgcolor="#091f36">
+                                    <td><font color="#ffffff"><b>Window</b></font></td>
+                                    <td><font color="#ffffff"><b>Middle</b></font></td>
+                                    <td><font color="#ffffff"><b>Aisle</b></font></td>
+                                    <td bgcolor="#cbd5e1"><font color="#0f172a"><b>Row</b></font></td>
+                                    <td><font color="#ffffff"><b>Aisle</b></font></td>
+                                    <td><font color="#ffffff"><b>Middle</b></font></td>
+                                    <td><font color="#ffffff"><b>Window</b></font></td>
+                                </tr>
+                                <tr align="center">
+                                    <td bgcolor="#fee2e2">10A</td>
+                                    <td bgcolor="#fee2e2">10B</td>
+                                    <td bgcolor="#dcfce7">10C</td>
+                                    <td bgcolor="#cbd5e1"><b>10</b></td>
+                                    <td bgcolor="#dcfce7">10D</td>
+                                    <td bgcolor="#fee2e2">10E</td>
+                                    <td bgcolor="#fee2e2">10F</td>
+                                </tr>
+                                <tr align="center">
+                                    <td bgcolor="#dcfce7">11A</td>
+                                    <td bgcolor="#dcfce7">11B</td>
+                                    <td bgcolor="#fee2e2">11C</td>
+                                    <td bgcolor="#cbd5e1"><b>11</b></td>
+                                    <td bgcolor="#dcfce7">11D</td>
+                                    <td bgcolor="#dcfce7">11E</td>
+                                    <td bgcolor="#fee2e2">11F</td>
+                                </tr>
+                                <tr align="center">
+                                    <td bgcolor="#fef08a"><b>12A</b><br><font size="1">(Chosen)</font></td>
+                                    <td bgcolor="#dcfce7">12B</td>
+                                    <td bgcolor="#dcfce7">12C</td>
+                                    <td bgcolor="#cbd5e1"><b>12</b></td>
+                                    <td bgcolor="#fee2e2">12D</td>
+                                    <td bgcolor="#fee2e2">12E</td>
+                                    <td bgcolor="#dcfce7">12F</td>
+                                </tr>
+                                <tr align="center">
+                                    <td bgcolor="#dcfce7">13A</td>
+                                    <td bgcolor="#fee2e2">13B</td>
+                                    <td bgcolor="#dcfce7">13C</td>
+                                    <td bgcolor="#cbd5e1"><b>13</b></td>
+                                    <td bgcolor="#dcfce7">13D</td>
+                                    <td bgcolor="#dcfce7">13E</td>
+                                    <td bgcolor="#dcfce7">13F</td>
+                                </tr>
+                            </table>
+                            <br>
+                            <font size="2" color="#64748b">Rear of Aircraft ↓</font>
+                        </td>
+                    </tr>
+                </table>
+
+                <br>
+                <table width="100%" border="0">
+                    <tr>
+                        <td align="left"><a href="verify.html"><b><< Back to Passenger Verification</b></a></td>
+                        <td align="right"><a href="baggage.html"><b>Proceed to Step 4: Baggage Information >></b></a></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+    <center>
+        <font size="2" color="#475569">SkyLine Airways Fleet Management | Aircraft Seating Control System</font>
+    </center>
+
+</body>
+</html>
